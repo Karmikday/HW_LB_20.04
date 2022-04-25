@@ -15,32 +15,40 @@ int main()
 	{
 		int choice;
 		cout << "\nMenu:" << endl;	
-		cout << "1 - Remove even values ​​from an array";
-		cout << "2 - Remove odd values ​​from an array";
+		cout << "1 - Remove even values ​​from an array\n";
+		cout << "2 - Remove odd values ​​from an array\n";
 		cin >> choice;
 		switch (choice)
 		{
 		case 1:
 		{
-			int ns = 0;
+			int q = 0;
 			for (int i = 0; i < size; i++)
 			{
 				if (arr[i] % 2 != 0)
 				{
-					arr[ns++] = arr[i];
+					arr[q++] = arr[i];
 				}
 			}
-			for (int i = 0; i < ns; i++) 
+			for (int i = 0; i < q; i++) 
 			{
 				cout << arr[i] << " ";
 			}
 		}break;
 		case 2:
 		{
-
-
-
-
+			int q = 0;
+			for (int i = 0; i < size; i++)
+			{
+				if (arr[i] % 2 == 0)
+				{
+					arr[q++] = arr[i];
+				}
+			}
+			for (int i = 0; i < q; i++)
+			{
+				cout << arr[i] << " ";
+			}
 		}break;
 		}
 	}
